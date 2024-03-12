@@ -1,0 +1,369 @@
+header{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 20vh;
+    background: rgb(186, 204, 209);
+}
+
+.logo{
+    padding: 15px 25px;
+    margin: 15px;
+    margin-right: 50px;
+    top: 5%;
+}
+
+
+.titulo{
+
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(201, 219, 224);
+}
+
+.texto{
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    left: 12%;
+    top: 30%;
+    border: none;
+    font-style: italic;
+    font: 300;
+    font-size: 20px;
+    line-height: 120%;
+    background: rgb(201, 219, 224);
+}
+
+.texto::placeholder{
+    color: rgba(40, 119, 223, 0.952);
+}
+
+.texto:focus
+.texto:active{
+
+    border:none;
+    outline: none;
+}
+
+.contenedor{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    left: 62%;
+    top: 22%;
+    width: 30%;
+    height: 79.5%;
+    border-radius: 32px;
+    background: white;
+    box-shadow: 0px 25px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.texto-contenedor{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    gap: 16px;
+    width: 100%;
+    top:65%;
+}
+
+.texto-contenedor.ajustar{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    top: 5%;
+    height: 80%;
+}
+
+.contenedor img {
+    position: absolute;
+    top: 6%;
+    width: 74%;
+    height: 59%;
+}
+
+.boton-copiar{
+    position: absolute;
+    background-color: #D8DFE8;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    font-family: inter;
+    justify-content: center;
+    width: 70%;
+    padding: 15px;
+    border-radius: 24px;
+    gap: 8px;
+    text-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 4px;
+    color: #0A3871;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    top: 300px;
+    right: 13.4%;
+}
+
+.boton-copiar:hover{
+    margin: 0.4%;
+    cursor: pointer;
+    padding: 4%;
+    width: 69%;
+}
+
+.oculto{
+    display:none ;
+}
+
+.terminos{
+    display: flex;
+    flex-direction: row;
+    padding:0px;
+    gap: 5px;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 85%;
+}
+
+.circle{
+    width: 16px;
+    height: 16px;
+    color:rgba(231, 3, 3, 0.699);
+
+}
+
+.text-circle{ 
+    font-family: inter;
+    font-size: 12.5px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style:bold;
+    color: #45565F;
+    opacity: 80%;
+    flex:none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.mensaje_final {
+    background-color: none;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: inter;
+    font-style: bold;
+    font-weight: 700;
+    line-height: 120%;
+    width: 90%;
+    font-size: 24px;
+    text-align: center;
+    color: black;
+}
+
+.mensaje_final.ajustar{
+    height: 285px;
+    background-color: none;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 240px; 
+    font-weight: lighter;
+    text-align: left;
+}
+
+.texto-contenedor p {
+    font-family: inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    width: 60%;
+    font-size: 16px;
+    text-align: center;
+    color: #4e565e;
+}
+
+.mensaje_final::placeholder{
+    color: rgba(26, 27, 29, 0.952);
+}
+
+.botones{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    border-radius: 24px 24px;
+    position: absolute;
+    top:88%;
+    width:80%;
+    left: 12%;
+    gap: 8px;
+
+}
+
+.boton-encriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+    font-family: inter;
+    justify-content: center;
+    width: 25%;
+    font-weight: 400;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background-color: rgb(1, 59, 126);
+    text-align: center;
+    font-size: 18px;
+    line-height: 15px;
+    color: white;
+}
+
+.boton-desencriptar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: inter;
+    justify-content: center;
+    width: 25%;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background-color:#D8DFE8;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 15px;
+    color: #0A3871;
+    box-sizing: border-box;
+    border: 1px solid #0A3871;
+}
+
+.boton-encriptar:hover,
+.boton-desencriptar:hover{
+
+    margin: 0.4%;
+    cursor: pointer;
+    padding: 1.8%;
+    width: 24%;
+}
+
+/* CAMBIOS PARA SITIO RESPONSIVO*/
+
+@media (max-width: 57em ) {
+
+    .logo{
+        padding: 45px 15px;
+        margin: 0px;
+        margin-right: 0px;
+    }
+
+    .titulo{
+        padding: 45px 5px;
+        margin: 20px;
+    }
+
+    .todo-contenedor{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .encriptar{
+        width: 100%;
+    }
+
+    .texto{
+        width: 80%;
+        height: 40%;
+        left: 12%;
+        top: 22%;
+    }
+    
+    .terminos{
+        width: 80%;
+        top: 65%;
+        left: 12%;
+    }
+
+    .terminos p{
+        font-size: 16px;
+    }
+
+    .botones{
+        width: 80%;
+        top: 67%;
+        left: 12%;
+    }
+
+    .boton-desencriptar, .boton-encriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+
+    .boton-desencriptar:hover, .boton-encriptar:hover{
+        margin: 0.1%;
+        width: 47%;
+        padding: 4.5%;
+
+    }
+
+    .contenedor{
+        top: 78%;
+        left: 12%;
+        width: 80%;
+        height: 20%;
+    }
+
+    .texto-contenedor{
+        width: 100%;
+        top: 5%;
+    }
+
+    .contenedor img{
+        display: none;
+        top: 0;
+        visibility: hidden;
+    }
+
+    .boton-copiar{
+        top: 70%;
+    }
+
+
+
+
+
+
+
+    
+
+
+}
+
+
+
+
+
+
+
+
